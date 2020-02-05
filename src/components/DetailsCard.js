@@ -2,7 +2,7 @@ import React from 'react';
 
 const DetailsCard = props => {
 	return (
-		<div className="details-wrapper">
+		<div className="details">
 			<div className="title">
 				<h2>Title</h2>
 				<p>{props.title}</p>
