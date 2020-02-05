@@ -21,7 +21,7 @@ const Datetime = props => {
 				</span>
 			</div>
 			<div className="layout-container">
-				<ImageCard img={props.data.url} />
+				<ImageCard img={props.data} />
 				<DetailsCard
 					title={props.data.title}
 					description={props.data.explanation}
