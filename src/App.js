@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
+import styled from 'styled-components';
 import Header from './components/Header';
 import Datetime from './components/Date';
 
@@ -36,9 +37,21 @@ function App() {
 
 	useEffect(effectCallback, [dateForApi]);
 
-	if (data.length === 0) return <div className="loader">Loading...</div>;
+	const Loader = styled.div`
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 50px;
+	`;
+
+	const App = styled.div`
+		text-align: center;
+	`;
+
+	if (data.length === 0) return <Loader>Loading...</Loader>;
 	return (
-		<div className="App">
+		<App>
 			<Header />
 			<Datetime
 				data={data}
@@ -46,7 +59,7 @@ function App() {
 				changeDate={changeDate}
 				setChangeDate={setChangeDate}
 			/>
-		</div>
+		</App>
 	);
 }
 
