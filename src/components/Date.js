@@ -19,10 +19,10 @@ const Datetime = props => {
 
 	const PlusMinus = styled.span`
 		display: inline-block;
-		width: 15px;
-		height: 15px;
+		// width: 15px;
+		// height: 15px;
 		background: #f2f2f2;
-		margin: 7px;
+		margin: -2px 7px;
 		padding: 3px 4px 4px 5px;
 		border: 1px solid #ddd;
 		border-radius: 4px;

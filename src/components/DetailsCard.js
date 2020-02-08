@@ -29,7 +29,7 @@ const DetailsCard = props => {
 	`;
 
 	return (
-		<DetailsContainer>
+		<DetailsContainer className="w-3/6 rounded overflow-hidden shadow-lg">
 			<InnerContainer>
 				<HeadingTwo>Title</HeadingTwo>
 				<Text>{props.title}</Text>

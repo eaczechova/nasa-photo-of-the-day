@@ -20,6 +20,7 @@ const Header = () => {
 		<HeaderComponent>
 			<HeaderTitle>
 				<HeaderLogo
+					className="mx-auto"
 					src="https://api.nasa.gov/assets/footer/img/favicon-192.png"
 					alt="nasa logo"
 				></HeaderLogo>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './App.css';
+import './css/App.css';
 import styled from 'styled-components';
 import Header from './components/Header';
 import Datetime from './components/Date';
@@ -46,12 +46,12 @@ function App() {
 	`;
 
 	const App = styled.div`
-		text-align: center;
+		// text-align: center;
 	`;
 
 	if (data.length === 0) return <Loader>Loading...</Loader>;
 	return (
-		<App>
+		<App className="text-center">
 			<Header />
 			<Datetime
 				data={data}
